@@ -1,0 +1,2 @@
+E:\sys2\mingw64\bin\ar.exe qc libsrc.a  CMakeFiles/src.dir/Server.cpp.obj CMakeFiles/src.dir/ServerSocket.cpp.obj
+E:\sys2\mingw64\bin\ranlib.exe libsrc.a

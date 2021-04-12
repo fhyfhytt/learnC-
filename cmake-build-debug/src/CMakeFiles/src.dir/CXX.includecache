@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/learn/gameserverlearn/learnc++/src/Server.cpp
+Server.h
+E:/learn/gameserverlearn/learnc++/src/Server.h
+string
+-
+cassert
+-
+
+E:/learn/gameserverlearn/learnc++/src/Server.h
+ws2tcpip.h
+-
+mswsock.h
+-
+cstdio
+-
+iostream
+-
+functional
+-
+
+E:/learn/gameserverlearn/learnc++/src/ServerSocket.cpp
+
