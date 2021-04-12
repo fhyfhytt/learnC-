@@ -124,6 +124,15 @@ void Server::waitingForIo() {
              continue;
          }
          std::cout<<"has error"<<errorCode<<" in io new Client "<<WSAGetLastError<<"\n";
+         if(!lpOverlapped){
+             break;
+         }else{
+             OverUnit* unit =(OverUnit*)lpOverlapped;
+             auto socket=unit->socket;
+             if(socket){
+                 socket->onError(unit->type,WSAGetLastError());
+             }
+         }
          break;
      }
  }
